@@ -1,0 +1,11 @@
+FROM node:16.2.0
+
+WORKDIR /usr/src/musicapi
+
+COPY package*.json .
+RUN npm install
+
+COPY . .
+
+EXPOSE 80
+CMD ["node", "index.js"]
