@@ -10,4 +10,4 @@ steps:
   inputs:
     repository: $(imageName)
     command: build
-    Dockerfile: express-main-example/Dockerfile
+    Dockerfile: express-main-example/dockerfile
